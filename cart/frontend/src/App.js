@@ -12,7 +12,7 @@ function App() {
  
   useEffect(()=>{
     (async()=>{
-      const res = await fetch(`${process.env.REACT_APP_SERVER_DOMIN}/product`)
+      const res = await fetch(`https://srv-backend.onrender.com/product`)
       const resData = await res.json()
       dispatch(setDataProduct(resData))
     })()
